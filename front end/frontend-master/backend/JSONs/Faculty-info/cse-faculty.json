@@ -1,0 +1,20 @@
+﻿[
+  {
+    "image": "/images/team/2.jpg",
+    "name": "srinivas",
+    "designation": " HOD (CSE)",
+    "qualification": "M.Tech",
+    "specialization": " Databases, Bigdata",
+    "email": "",
+    "profile": ""
+  },
+  {
+    "image": "/images/team/2.jpg",
+    "name": "Mr.ravikumar ",
+    "designation": "Assistant Professor",
+    "qualification": "Ph. D. ",
+    "specialization": "ML",
+    "email": "",
+    "profile": ""
+  }
+]

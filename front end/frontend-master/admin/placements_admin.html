@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        h1 {
+            padding-top: 4%;
+            padding-left: 8%;
+            font-size: 400%;
+        }
+
+        #header {
+            background-color: rgb(205, 182, 50);
+            padding: 2%;
+        }
+
+
+        /* Style the navigation bar */
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        /* Navbar links */
+        .navbar a {
+            float: left;
+            text-align: center;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Navbar links on mouse-over */
+        .navbar a:hover {
+            background-color: rgb(134, 125, 75);
+        }
+
+        /* Current/active navbar link */
+        .active {
+            background-color: #c3b05a;
+        }
+
+        /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+
+
+
+
+
+
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+        }
+
+        /* Full-width input fields */
+        input[type=text] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for the submit/register button */
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <script type="text/javascript" src="/home/ganesh/Documents/KIET/vendor/jquery.2.2.3.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="adminbackend.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="row" id="header">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-fix">
+                <img id="logomainimg" src="/home/ganesh/Documents/KIET/images/logomain.jpg" alt="Logo"></a>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 p-fix">
+                <h1>ADMIN PORTAL</h1>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="navbar">
+                <a href="./admin_notices.html"><i class="fa fa-fw fa-envelope"></i> NOTICES</a>
+                <a href="./faculty_admin.html"><i class="fa fa-fw fa-user"></i> FACULTY</a>
+                <a href="./media_admin.html"><i class="fa fa-picture-o"></i> MEDIA</a>
+
+                <a class="active" href="./placements_admin.html"><i class="fa fa-graduation-cap"></i> PLACEMENTS</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+        <div class="container" style="background-color: rgb(241, 236, 236);">
+            <h2>ADD PLACEMENT DETAILS</h2>
+            <p>Fill in this form to add a progress bar for placements.</p>
+            <hr>
+
+            <label for="year"><b>PLACEMENT YEAR</b></label>
+            <input type="text" placeholder="Enter placement year" name="year" id="placement_year" required>
+
+            <label for="percent"><b>PERCENTAGE</b></label>
+            <input type="text" placeholder="Enter placement percent" name="percent" id="placement_percent" required>
+
+            <button onclick="post_placement()" type="submit" class="btn" id="add_placement">ADD DATA</button>
+        </div>
+   
+
+</body>
+
+</html>

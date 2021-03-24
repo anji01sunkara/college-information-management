@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>KIET</title>
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+<!--list.js -->
+		<script src="list.min.js"></script>
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+			
+	</head>
+
+	<style>
+		.logo{
+				width:60px;
+				height:50px;
+			}
+		@media (max-width: 650px){
+			.logo{
+				width:60px;
+				height:50px;
+			}
+		}
+		
+		</style>
+
+	<body>
+		<div class="main-page-wrapper">
+
+
+
+			<!-- 
+			=============================================
+				Theme Header
+			============================================== 
+			-->
+
+			<header class="theme-main-header">
+				<div class="container">
+					<a href="index.html" class="logo float-left tran4s">
+						<img id="logomainimg" src="./images/logomain.jpg" alt="Logo"></a>
+					<!-- ========================= Theme Feature Page Menu ======================= -->
+					<nav class="navbar float-right theme-main-menu">
+						<!-- mobile view button -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"
+							 aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								Menu
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</button>
+						</div>
+	
+						<!-- all pages in the page -->
+						<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">HOME</a></li>
+								<li><a href="about.html">ABOUT</a></li>
+								  
+								<li><a href="placements.html">PLACEMENTS</a></li>
+								<li><a href="lookaround.html">LOOK AROUND</a></li>
+								<li class="dropdown-holder"><a href="#">STUDENTS CORNER</a>
+									<ul class="sub-menu">
+										<li><a href="campus.html" class="tran3s">FACILITIES</a></li>
+										<li><a href="gallery.html" class="tran3s">GALLERY</a></li>
+										<li><a href="socities.html" class="tran3s">STUDENT CLUBS</a></li>
+									</ul>
+								</li>
+								
+								<li class="dropdown-holder"><a href="academics.html">DEPARTMENTS</a>
+									<ul class="sub-menu">
+										<li><a href="CSEteachers.html" class="tran3s">CSE Faculty</a></li>
+										<li><a href="ECEteachers.html" class="tran3s">ECE Faculty</a></li>
+										<li><a href="EEEteachers.html" class="tran3s">EEE Faculty</a></li>
+									</ul>
+								</li>
+								
+								<li><a href="contact.html">CONTACT US</a></li>
+							</ul>
+	
+						</div>
+	
+					</nav> <!-- /.theme-feature-menu -->
+				</div>
+			</header>	
+			<!--
+			=====================================================
+				Theme Inner page Banner
+			=====================================================
+			-->
+
+			<section class="inner-page-banner">
+					<div class="opacity">
+						<div class="container">
+							<h2>KIET GROUP OF INSTITUTIONS</h2>
+							<ul>
+								<li><b>Affiliated to JNTUK</b></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+            <div class="theme-title">
+                <h2>Notices</h2>
+                <p>This page is dedicated to notice related to new announcements.Here you will find all updates related to our college.</p>
+            <hr>
+
+
+
+
+            </div> <!-- /.theme-title -->
+	<style>
+		
+
+
+
+
+/* RESPONSIVE EXAMPLE */
+
+
+@media (max-width: 600px) {
+  .responsivetable { overflow-x: scroll;
+  position: relative;
+  margin-left:-53%;
+	  transform:scale(0.50); }
+  
+}
+@media (min-width: 600px) and (max-width : 850px){
+  .responsivetable { overflow-x: scroll;
+  position: relative;
+  margin-left:40%;
+	  transform:scale(0.80); }
+  
+}
+</style>
+<!--script for searching in table-->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#TableInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#Kiettabdata tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+ <div class="theme-title">
+<h2>Table Search</h2>
+<h2><input id = "TableInput" type = "text" placeholder = "Search in table.."><h2>
+</div>
+
+
+<!--This table idea  is similar to jackrugile codepen.and redesigned and responsive feature added by our team-->
+<table class="responsivetable">
+					<thead>
+					  <tr>
+						<th >DATE</th>
+						<th >TYPE</th>
+						<th>NOTICES</th>
+					  </tr>
+					</thead>
+					<tbody id = "Kiettabdata">
+					  <tr>
+						<td><strong>22/09/10</strong></td>
+						<td class = "academics">academics</td>
+						<td>CSE time table</td>
+					  </tr>
+					  <tr>
+						<td><strong>22/09/2018</strong></td>
+						<td class = "Financial">Financial</td>
+						<td>SBI fee link</td>
+					  </tr>
+					  <tr>
+						<td><strong>23/08/2018</strong></td>
+						<td class = "Schlorship">Schlorship</td>
+						<td><a href="file:///C:/Users/Ganeshchandra/Desktop/project/KIET/notice.html" class="tran3s active"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Post-matric Scholarship for Students with Disabilities</a></td>
+					  </tr>
+					  <tr>
+						<td><strong>24/08/2018</strong></td>
+						<td class = "Schlorship">Scholarship</td>
+						<td><a href="file:///C:/Users/Ganeshchandra/Desktop/project/KIET/notice.html" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Notice-MERIT CUM MEANS BASED SCHOLARSHIP</a></td>
+					  </tr>					
+					  <tr>
+						<td><strong>24/08/2018</strong></td>
+						<td class = "Announcement">Announcement</td>
+						<td> <a href="file:///C:/Users/Ganeshchandra/Desktop/project/KIET/notice.html" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Result For Walk-in-Interview held on Aug 27-28 2018</td>
+					  </tr>
+					  <tr>
+						<td><strong>24/08/2018</strong></td>
+						<td class = "Schlorship">Schlorship</td>						
+						<td><a href="file:///C:/Users/Ganeshchandra/Desktop/project/KIET/notice.html" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> PRIME MINISTER�S SCHOLARSHIP SCHEME for RPF</a></td>
+					  </tr>
+					  <tr>
+						<td><strong>25/08/2018</strong></td>
+						<td class = "time-table">time-table</td>
+						<td><a href="file:///C:/Users/Ganeshchandra/Desktop/project/KIET/notice.html" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Sessional Exam-Intimation for back paper</a></td>
+					  </tr>
+					  <tr>
+						<td><strong>24/05/2018</strong></td>
+						<td class = "event"> event</td>
+						<td>Inceptum</td>
+					  </tr>
+					  <tr>
+						<td><strong>24/06/2018</strong></td>
+						<td class =  "workshop">workshop</td>
+						<td>python workshop</td>
+					  </tr>
+					</tbody>
+</table>
+
+<style>
+
+strong {
+	font-weight: bold; 
+}
+
+em {
+	font-style: italic; 
+}
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 800px;
+}	
+
+th {
+	background:  linear-gradient(90deg,rgb(231, 66, 37), rgb(243, 35, 35));
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+	border-radius:3%;
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+				  
+				  
+</style>
+
+<!-- Footer -->
+	<footer class="bg1">
+		<div class="container p-t-40 p-b-70">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<h4 class="txt13 m-b-33">
+						Contact Us
+					</h4>
+					<ul class="m-b-70">
+						<li class="txt14 m-b-14">
+							<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+							KIET group of institutions 533461 - Korangi
+						</li>
+
+						<li class="txt14 m-b-14">
+							<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+							+91-9440127485
+						</li>
+						<br>
+						<li class="txt14 m-b-14">
+							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+							principal@kietgroup.com
+						</li>
+					</ul>
+					<!-- - -->
+					<h4 class="txt13 m-b-32">
+						Opening Times
+					</h4>
+
+					<ul>
+						<li class="txt14">
+							09:00 AM – 4:00 PM
+						</li>
+						<li class="txt14">
+							Working Days
+						</li>
+					</ul>
+				</div>
+				<!-- usful link on the bottom of the page-->
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						Useful Links
+					</h4>
+
+					<div class="m-b-25">
+
+						<a href="#" class="txt15">
+							SBI Online fee payment link
+						</a>
+						<br>
+						<a href="#" class="txt15">
+							Jntuk fast updates
+						</a>
+						<br>
+						<a href="#" class="txt15">
+							Student marks and other details
+						</a>
+						<br>
+						<a href="#" class="txt15">
+							Antiragging notice and contacts.
+						</a><br>
+						<a href="#" class="txt15">
+							Blood Donations
+						</a>
+						<br>
+						<a href="#" class="txt15">
+							Students Blog
+
+					</div>
+				</div>
+
+				<!-- gallary on the bottom of the page-->
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-38">
+						Gallery
+					</h4>
+					<!-- Gallery footer -->
+					<div class="wrap-gallery-footer flex-w">
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/5.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/4.jpg" alt="GALLERY">
+						</a>
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/5.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/4.jpg" alt="GALLERY">
+						</a>
+						<br>
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/5.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/4.jpg" alt="GALLERY">
+						</a>
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/5.jpg" alt="GALLERY">
+						</a>
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/4.jpg" alt="GALLERY">
+						</a>
+						<br>
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/5.jpg" alt="GALLERY">
+						</a>
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="images/blog/4.jpg" alt="GALLERY">
+						</a>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+			<!-- =============================================
+				Loading Transition
+			============================================== -->
+			<div id="loader-wrapper">
+				<div id="preloader_1">
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	            </div>
+			</div>
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s p-color-bg">
+				<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+			</button>
+		<!-- Js File_________________________________ -->
+		<!-- j Query -->
+		<script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+		<!-- Vendor js _________ -->
+		<!-- owl.carousel -->
+		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- mixitUp -->
+		<script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
+		<!-- Progress Bar js -->
+		<script type="text/javascript" src="vendor/skills-master/jquery.skills.js"></script>
+		<!-- Validation -->
+		<script type="text/javascript" src="vendor/contact-form/validate.js"></script>
+		<script type="text/javascript" src="vendor/contact-form/jquery.form.js"></script>
+		<!-- Calendar js -->
+		<script type="text/javascript" src="vendor/monthly-master/js/monthly.js"></script>
+		<!-- Theme js -->
+		<script type="text/javascript" src="js/theme.js"></script>
+		<script type="text/javascript" src="js/map-script.js"></script>
+</div>
+</body>
+</html>

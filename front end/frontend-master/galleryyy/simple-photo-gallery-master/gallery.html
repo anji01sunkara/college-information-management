@@ -1,0 +1,193 @@
+<!doctype html>
+<!-- Simple Photo Gallery by Tyson Hummel -->
+<!-- http://github.com/tysonhummel -->
+<!-- Free to use with no restrictions -->
+
+<head>
+        <meta charset="UTF-8">
+        <!-- For IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Resposive Device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KIET</title>
+        <!-- Favicon 
+         Main style sheet -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- responsive style sheet -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<style>
+	.logo {
+        width: 60px;
+        height: 30px;
+    }
+    
+    @media (max-width: 650px) {
+        .logo {
+            width: 60px;
+            height: 50px;
+        }
+    }
+    
+    ;
+    @media (max-width: 650px) {
+        .placement {
+            position: absolute;
+            left: auto;
+            transform: scale(0.8);
+        }
+    }
+img{
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.photo-thumbs img{
+    margin: 10px 0 5px;
+}
+.row{
+    margin-bottom: 20px;
+}
+h2{
+    margin-top: 10px;
+}
+</style>
+
+<body>
+
+		<header class="theme-main-header">
+                <div class="container">
+                    <a href="index.html" class="logo float-left tran4s">
+                        <img id="logomainimg" src="./images/logomain.jpg" alt="Logo"></a>
+                    <!-- ========================= Theme Feature Page Menu ======================= -->
+                    <nav class="navbar float-right theme-main-menu">
+                        <!-- mobile view button -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"
+                             aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span> Menu
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+                        </div>
+    
+                        <!-- all pages in the page -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+    
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                  
+                                <li><a href="placements.html">PLACEMENTS</a></li>
+                                <li><a href="lookaround.html">LOOK AROUND</a></li>
+                                <li class="dropdown-holder"><a href="campus.html">STUDENTS CORNER</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="campus.html" class="tran3s">FACILITIES</a></li>
+                                        <li><a href="gallery.html" class="tran3s">GALLERY</a></li>
+                                        <li><a href="socities.html" class="tran3s">STUDENT CLUBS</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="dropdown-holder"><a href="academics.html">DEPARTMENTS</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="CSEteachers.html" class="tran3s">CSE Faculty</a></li>
+                                        <li><a href="ECEteachers.html" class="tran3s">ECE Faculty</a></li>
+                                        <li><a href="EEEteachers.html" class="tran3s">EEE Faculty</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li><a href="contact.html">CONTACT US</a></li>
+                            </ul>
+    
+                        </div>
+    
+                    </nav>
+                    <!-- /.theme-feature-menu -->
+                </div>
+            </header>
+            
+		<section class="inner-page-banner">
+                <div class="opacity">
+                    <div class="container">
+                        <h2>KIET GROUP OF INSTITUTIONS</h2>
+                        <ul>
+                            <li><b>Affiliated to JNTUK</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Simple photo gallery made with jQuery and Bootstrap</h1>
+                <p>You can have multiple galleries on a single page, captions are optional. Works best with webkit browsers - non-webkit browsers not so best.</p>
+                <p>This code is free to use with no restrictions. <a href="https://github.com/tysonhummel/simple-photo-gallery" target="_blank">https://github.com/tysonhummel/simple-photo-gallery</a></p>
+                <p>Click a thumbnail below to open the viewer.</p>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Gallery 1</h2>
+                <p>Basic example using the same large image for both the thumbnails and the viewer.</p>
+            </div>
+            <!-- Start gallery markup -->
+            <div class="photo-thumbs">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="img/image-1.jpg" data-caption="bridge 1" />
+                    <span>image src="img/image-1.jpg"</span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="img/image-2.jpg" data-caption="fog" />
+                    <span>image src="img/image-2.jpg"</span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="img/image-3.jpg" data-caption="bridge 2" />
+                    <span>image src="img/image-3.jpg"</span>
+                </div>
+            </div>
+            <!-- end gallery markup -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Gallery 2</h2>
+                <p>To use smaller images for thumbnails, just add "-thumb" to your thumbnail image file names. Example: "image-thumb.jpg", then use that image on the main page.
+                    To use captions, add it like this &lt;img src="path/to/image-thumb.jpg" data-caption="Caption goes here" /&gt;.</p>
+            </div>
+            <!-- Start gallery markup -->
+            <div class="photo-thumbs">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="img/image-4-thumb.jpg" data-caption="Propeller" />
+                    <span>thumb src="img/image-4-thumb.jpg"<br /></span>
+                    <span>image src="img/image-4.jpg"<br /></span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="img/image-5-thumb.jpg" data-caption="Dragonfly" />
+                    <span>thumb src="img/image-5-thumb.jpg"<br /></span>
+                    <span>image src="img/image-5.jpg"<br /></span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <img src="img/image-6-thumb.jpg" data-caption="If you want to have a really long caption, you can totally do that. You can put all kinds of letters and words in here and basically just be really verbose. Perhaps unnecessarily so. Great power is in your hands, and as such, your level of responsibility is directly proportionate therein." />
+                    <span>thumb src="img/image-6-thumb.jpg"<br /></span>
+                    <span>image src="img/image-6.jpg"<br /></span>
+                </div>
+            </div>
+            <!-- end gallery markup -->
+        </div>
+
+    </div>
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/gallery.js"></script>
+
+</body>
+</html>
